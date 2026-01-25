@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Currently, I am a master's student in Data Science at Maastricht University.
 twitter_username: username
 github_username: username
-minimal_mistakes_skin: mint
+minimal_mistakes_skin: dark
 search: true
 
 # Build settings
@@ -59,7 +59,9 @@ plugins:
 author:
   name   : "Akhilesh Ramesh"
   avatar : "/assets/images/photo.png"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio: >
+  I am a Data Science enthusiast primarily coding in Rust & Python
+  Currently, I am a master's student in Data Science at Maastricht University.
   links:
     - label: "Email"
       icon: "fab fa-fw fa-twitter-square"
