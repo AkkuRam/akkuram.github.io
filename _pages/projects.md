@@ -1,6 +1,8 @@
 ---
 title: "Projects"
 permalink: /projects/
+layout: splash
+classes: wide
 
 feature_row:
   - image_path: /assets/images/simulation.png
