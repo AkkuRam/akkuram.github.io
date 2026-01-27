@@ -1,0 +1,11 @@
+/* Make project images uniform */
+.feature__image {
+  height: 260px;          /* pick what looks good */
+  overflow: hidden;
+}
+
+.feature__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
