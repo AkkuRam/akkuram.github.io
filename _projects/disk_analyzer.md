@@ -1,5 +1,5 @@
 ---
 title: "Disk analyzer"
 layout: single
-permalink: /projects/ship_simulation/
+permalink: /projects/disk_analyzer
 ---

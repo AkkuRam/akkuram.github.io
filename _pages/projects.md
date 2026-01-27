@@ -12,6 +12,7 @@ feature_row:
     url: /projects/ship_simulation/
     btn_label: "View Project"
     btn_class: "btn--primary"
+    type: wide
 
   - image_path: /assets/images/disk_analyzer.png
     alt: "Disk"
@@ -19,9 +20,10 @@ feature_row:
     excerpt: This is a system monitoring tool which displays
              different statistics of a device (i.e. CPU usage, network speed, etc.)
              It is a mini replica of the task manager, in terms of the stats page.
-    url: /projects/disk_analyzer.md
+    url: /projects/disk_analyzer
     btn_label: "View Project"
     btn_class: "btn--primary"
+    type: wide
 
 ---
 {% include feature_row %}
