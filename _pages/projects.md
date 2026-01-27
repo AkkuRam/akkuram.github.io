@@ -2,7 +2,7 @@
 title: "Projects"
 permalink: /projects/
 layout: splash
-classes: wide projects-page
+# classes: wide projects-page
 
 feature_row:
   - image_path: /assets/images/simulation.png
