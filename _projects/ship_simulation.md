@@ -1,7 +1,8 @@
 ---
 title: "Ship simulation"
-layout: single
+layout: splash
 permalink: /projects/ship_simulation/
+classes: wide
 ---
 
 ## Overview
