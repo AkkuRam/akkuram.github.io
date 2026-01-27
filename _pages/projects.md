@@ -13,5 +13,7 @@ feature_row:
     url: /projects/ship_simulation/
     btn_label: "View Project"
     btn_class: "btn--primary"
+    type: wide
+    align: center
 ---
 {% include feature_row %}
