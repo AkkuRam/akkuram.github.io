@@ -1,5 +1,5 @@
 ---
 title: "Disk analyzer"
-layout: single
+layout: splash
 permalink: /projects/disk_analyzer
 ---
