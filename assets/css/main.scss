@@ -1,3 +1,10 @@
+---
+# Only the main Sass file needs front matter
+---
+
+@import "minimal-mistakes";
+
+/* Custom spacing for project feature rows */
 .feature__item--wide {
   max-width: 1100px;
   margin: 0 auto 4rem auto;
