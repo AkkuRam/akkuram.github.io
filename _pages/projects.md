@@ -14,6 +14,7 @@ feature_row:
     url: /projects/ship_simulation/
     btn_label: "View Project"
     btn_class: "btn--primary"
+    type: wide
 
   - image_path: /assets/images/disk_analyzer.png
     alt: "Disk"
@@ -24,6 +25,7 @@ feature_row:
     url: /projects/disk_analyzer
     btn_label: "View Project"
     btn_class: "btn--primary"
+    type: wide
 
 ---
 {% include feature_row %}
