@@ -4,8 +4,7 @@ permalink: /projects/
 layout: splash
 
 feature_row:
-  - image_path: /assets/images/simulation.png
-    alt: "Ship"
+  - alt: "Ship"
     title: "Ship simulation"
     excerpt: This project consists of simulating a ship in sea
              waters with varying wind speeds and wave heights to 
@@ -14,8 +13,7 @@ feature_row:
     btn_label: "View Project"
     btn_class: "btn--primary"
 
-  - image_path: /assets/images/disk_analyzer.png
-    alt: "Disk"
+  - alt: "Disk"
     title: "Disk analyzer"
     excerpt: This is a system monitoring tool which displays
              different statistics of a device (i.e. CPU usage, network speed, etc.)
