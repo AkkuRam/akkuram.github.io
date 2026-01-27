@@ -1,10 +1,5 @@
-.feature__wrapper .archive__item-teaser {
-  height: 260px;
-  overflow: hidden;
-}
-
 .feature__wrapper .archive__item-teaser img {
-  width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
+  width: 100%;
 }
