@@ -14,4 +14,4 @@ feature_row:
     btn_label: "View Project"
     btn_class: "btn--primary"
 
-{% feature_row %}
+{% include feature_row %}
