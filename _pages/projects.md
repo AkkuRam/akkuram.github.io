@@ -6,9 +6,8 @@ layout: splash
 feature_row:
   - alt: "Ship"
     title: "Ship simulation"
-    excerpt: This project consists of simulating a ship in sea
-             waters with varying wind speeds and wave heights to 
-             analyse the ship's response (6 DOFs).
+    excerpt: This project consists of modeling a ship's response
+             subject to wind and wave induced sea states.
     url: /projects/ship_simulation/
     btn_label: "View Project"
     btn_class: "btn--primary"
