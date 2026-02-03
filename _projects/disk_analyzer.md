@@ -22,7 +22,7 @@ It displays statistics, which will be explained in the later section. The librar
 ### Network Speed
 
 - Library: psutil
-- Displays real-time Network Speed (Download/Upload) in KB/s
+- Displays real-time Network Speed in KB/s
 
 ### Disk Space & System/Other Specifications
 
