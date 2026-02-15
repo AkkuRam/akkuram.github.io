@@ -4,13 +4,13 @@ permalink: /projects/
 layout: splash
 
 feature_row:
-  - alt: "Ship"
-    title: "Ship simulation"
-    excerpt: This project consists of modeling a ship's response
-             subject to wind and wave induced sea states.
-    url: /projects/ship_simulation/
-    btn_label: "View Project"
-    btn_class: "btn--primary"
+  # - alt: "Ship"
+  #   title: "Ship simulation"
+  #   excerpt: This project consists of modeling a ship's response
+  #            subject to wind and wave induced sea states.
+  #   url: /projects/ship_simulation/
+  #   btn_label: "View Project"
+  #   btn_class: "btn--primary"
 
   - alt: "Disk"
     title: "Disk analyzer"

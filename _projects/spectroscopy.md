@@ -5,7 +5,7 @@ layout: single
 classes: wide
 ---
 
-[Disk Analyser (Github)](https://github.com/AkkuRam/df-project)
+[Spectroscopy Prediction (Github)](https://github.com/AkkuRam/df-project)
 
 ## Dataset description
 - Size: 373 rows, 998 columns
