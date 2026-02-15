@@ -26,6 +26,14 @@ feature_row:
     url: /projects/spectroscopy
     btn_label: "View Project"
     btn_class: "btn--primary"
+
+  - alt: "Plant"
+    title: "Plant Detection"
+    excerpt: Machine learning approach for detecting 38 different leaf types. The ground truth annotations
+             were given by the YOLO model.
+    url: /projects/plant_detection
+    btn_label: "View Project"
+    btn_class: "btn--primary"
 ---
 {% include feature_row %}
 
