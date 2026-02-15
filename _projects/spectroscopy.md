@@ -42,6 +42,22 @@ Referring to the images below, the first image represents the signals after bein
 <p align="center">
   <img src="/assets/images/signal_1.png" width="45%" />
   <img src="/assets/images/signal_2.png" width="45%" />
+</p>
+
+<p align="center">
   <img src="/assets/images/signal_3.png" width="45%" />
   <img src="/assets/images/signal_4.png" width="45%" />
 </p>
+
+## Mid-level fusion
+
+- Extracting features using PCA + Categorical features
+
+From the previous preprocessing steps, now the data is ready to use for the models. PCA is applied to reduce the dimensionality, since we are dealing with ~300 columns, where the PCA plot of 2 components below depicts a reasonable separation of the 7 classes. Moreover, from literature a threshold of keeping 90% of the variance was used which selected top 5 components in our case. The elbow method was not used, since this chose < 5 components, and the results (i.e. accuracy, precision, recall, f1score) were suboptimal.
+
+<p align="center">
+  <img src="/assets/images/pca.png" width="45%" />
+  <img src="/assets/images/pca_thresholded.png" width="45%" />
+</p>
+
+With the following selections for mid-level fusion, it lead to the following results for the below metrics. Overall, the best performing models in terms of accuracy was XGBoost (78%), but in terms of other metrics, but XGBoost and RF were stable.
