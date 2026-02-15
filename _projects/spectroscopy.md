@@ -1,5 +1,5 @@
 ---
-title: "Spectroscopy"
+title: "Spectroscopy Data - Plastic Type Prediction"
 permalink: /projects/spectroscopy/
 layout: single
 classes: wide
@@ -68,13 +68,13 @@ With the following selections for mid-level fusion, it lead to the following res
 |  2 | MLP      |       0.60  |        0.53 |     0.56 |       0.53 |
 |  3 | RF       |       0.71 |        0.74 |     0.73 |       0.72 |    
 
- ## High-level fusion
+## High-level fusion
 
 Unlike mid-level fusion, high-level fusion focuses on combining the outputs of multiple models, there is no
 feature extraction in this stage. Hence, for high-level, all the preprocessing steps are used on the raw data, but without applying PCA. The formula for bayesian consensus is shown below. 
 
 $$
-p(h_g | e) = \\frac{p(e | h_g) p(h_g)}{ \sum_g p(e | h_g) p(h_g)}
+p(h_g | e) = \frac{p(e | h_g) p(h_g)}{ \sum_g p(e | h_g) p(h_g)}
 $$
 
 - $p(e|h_g)$ is the likelihood estimate of the conditional probability that evidence e is observed
@@ -89,7 +89,7 @@ Example:
 |  1 | True B    |            12 |            60 |           0.17 |           0.83 |
 
 $$
-p(h_A|A) = \\frac{0.87 \cdot 0.50}{0.17 \cdot 0.5 + 0.97 \cdot 0.5} = 0.84   
+p(h_A|A) = \frac{0.87 \cdot 0.50}{0.17 \cdot 0.5 + 0.97 \cdot 0.5} = 0.84   
 $$
 
 $$
