@@ -22,7 +22,7 @@ feature_row:
 
   - alt: "Spectroscopy"
     title: "Plastic type prediction"
-    excerpt: Plastic type prediction of 7 different plastics types using signal data. 
+    excerpt: Fuse near-infrared spectroscopy signal measurements with categorical descriptors on a dataset obtained from          household plastic in a group of 4 people
     url: /projects/spectroscopy
     btn_label: "View Project"
     btn_class: "btn--primary"

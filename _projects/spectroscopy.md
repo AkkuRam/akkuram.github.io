@@ -3,8 +3,6 @@ title: "Spectroscopy"
 permalink: /projects/spectroscopy/
 layout: single
 ---
-
-Objective: Fuse near-infrared spectroscopy signal measurements with categorical descriptors on a dataset obtained from household plastic in a group of 4 people
             
 ## Dataset description
 - Size: 373 rows, 998 columns
