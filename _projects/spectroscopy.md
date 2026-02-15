@@ -38,3 +38,10 @@ Now with BorderlineSMOTE, the first image below represents the imbalanced classe
 These images represent the preprocessing steps of the signal. For 7 plastic types there are many samples, hence there are multiple signal lines. In addition, once the signals are preprocessed, if for each plastic type the samples are averaged, it should represent a distinct signal for each plastic type, which makes it identifiable which plastic type is which signal.
 
 Referring to the images below, the first image represents the signals after being oversampled. There is clear background noise, therefore baseline correction is applied to isolate the peaks and flatten out the noise by using a quadratic polynomial (image 2). Hereafter, normalization is applied to bring them in a standard scale (image 3). Then the final step is to apply a Savitzky-Golay filter, which mainly smoothens out the signal (image 4).
+
+<p align="center">
+  <img src="/assets/images/signal_1.png" width="25%" />
+  <img src="/assets/images/signal_2.png" width="25%" />
+  <img src="/assets/images/signal_3.png" width="25%" />
+  <img src="/assets/images/signal_4.png" width="25%" />
+</p>
