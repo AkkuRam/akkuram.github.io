@@ -21,7 +21,7 @@ feature_row:
     btn_class: "btn--primary"
 
   - alt: "Spectroscopy"
-    title: "Spectroscopy Classification"
+    title: "Plastic Classification"
     excerpt: Fuse near-infrared spectroscopy signal measurements with categorical descriptors on a dataset obtained from          household plastics
     url: /projects/spectroscopy
     btn_label: "View Project"
@@ -32,6 +32,13 @@ feature_row:
     excerpt: Machine learning approach for detecting 38 different leaf types. The ground truth annotations
              were given by the YOLO model.
     url: /projects/plant_detection
+    btn_label: "View Project"
+    btn_class: "btn--primary"
+
+  - alt: "PPT"
+    title: "PPT to Image"
+    excerpt: Powershell script to convert the slides in a .pptx file to images
+    url: /projects/ppttoimage/
     btn_label: "View Project"
     btn_class: "btn--primary"
 ---

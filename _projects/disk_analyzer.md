@@ -5,7 +5,7 @@ layout: single
 ---
 
 <a href="https://github.com/AkkuRam/disk-analyzer">
-  Github: <i class="fab fa-fw fa-github"></i> Disk Analyser
+  <i class="fab fa-fw fa-github"></i> Disk Analyser
 </a>
 
 ![Disk](/assets/images/disk_analyzer.png)

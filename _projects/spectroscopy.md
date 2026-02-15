@@ -6,7 +6,7 @@ classes: wide
 ---
 
 <a href="https://github.com/AkkuRam/df-project">
-  Github: <i class="fab fa-fw fa-github"></i> Spectroscopy Prediction
+  <i class="fab fa-fw fa-github"></i> Spectroscopy Prediction
 </a>
 
 ## Dataset description

@@ -6,7 +6,7 @@ classes: wide
 ---
 
 <a href="https://github.com/AkkuRam/plant-detection">
-  Github: <i class="fab fa-fw fa-github"></i> Plant Detection 
+  <i class="fab fa-fw fa-github"></i> Plant Detection 
 </a>
 
 ## Dataset
