@@ -2,6 +2,7 @@
 title: "Spectroscopy"
 permalink: /projects/spectroscopy/
 layout: single
+classes: wide
 ---
             
 ## Dataset description
