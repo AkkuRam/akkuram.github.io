@@ -23,7 +23,7 @@ feature_row:
   - alt: "Spectroscopy"
     title: "Plastic type prediction"
     excerpt: Plastic type prediction of 7 different plastics types using signal data. 
-    url: /projects/spectroscopy.md
+    url: /projects/spectroscopy
     btn_label: "View Project"
     btn_class: "btn--primary"
 ---
