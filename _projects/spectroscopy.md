@@ -65,7 +65,7 @@ With the following selections for mid-level fusion, it lead to the following res
 |---:|:---------|-----------:|------------:|---------:|-----------:|
 |  0 | XGBoost  |       0.78 |        0.77 |     0.77 |       0.77 |
 |  1 | AdaBoost |       0.51 |        0.55 |     0.53 |       0.49 |
-|  2 | MLP      |       0.6  |        0.53 |     0.56 |       0.53 |
+|  2 | MLP      |       0.60  |        0.53 |     0.56 |       0.53 |
 |  3 | RF       |       0.71 |        0.74 |     0.73 |       0.72 |    
 
  ## High-level fusion
