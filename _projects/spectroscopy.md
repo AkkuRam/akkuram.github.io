@@ -40,8 +40,8 @@ These images represent the preprocessing steps of the signal. For 7 plastic type
 Referring to the images below, the first image represents the signals after being oversampled. There is clear background noise, therefore baseline correction is applied to isolate the peaks and flatten out the noise by using a quadratic polynomial (image 2). Hereafter, normalization is applied to bring them in a standard scale (image 3). Then the final step is to apply a Savitzky-Golay filter, which mainly smoothens out the signal (image 4).
 
 <p align="center">
-  <img src="/assets/images/signal_1.png" width="25%" />
-  <img src="/assets/images/signal_2.png" width="25%" />
-  <img src="/assets/images/signal_3.png" width="25%" />
-  <img src="/assets/images/signal_4.png" width="25%" />
+  <img src="/assets/images/signal_1.png" width="45%" />
+  <img src="/assets/images/signal_2.png" width="45%" />
+  <img src="/assets/images/signal_3.png" width="45%" />
+  <img src="/assets/images/signal_4.png" width="45%" />
 </p>
