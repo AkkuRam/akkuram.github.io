@@ -5,7 +5,9 @@ layout: single
 classes: wide
 ---
 
-[Spectroscopy Prediction (Github)](https://github.com/AkkuRam/df-project)
+<a href="https://github.com/AkkuRam/df-project">
+  <i class="fab fa-fw fa-github"></i> Spectroscopy Prediction
+</a>
 
 ## Dataset description
 - Size: 373 rows, 998 columns

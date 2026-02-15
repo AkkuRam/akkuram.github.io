@@ -4,7 +4,9 @@ permalink: /projects/disk_analyzer
 layout: single
 ---
 
-[Disk Analyser (Github)](https://github.com/AkkuRam/disk-analyzer)
+<a href="https://github.com/AkkuRam/disk-analyzer">
+  <i class="fab fa-fw fa-github"></i> Disk Analyser
+</a>
 
 ![Disk](/assets/images/disk_analyzer.png)
 
