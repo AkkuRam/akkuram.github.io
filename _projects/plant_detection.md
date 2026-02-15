@@ -5,26 +5,28 @@ layout: single
 classes: wide
 ---
 
-[Spectroscopy Prediction (Github)](https://github.com/AkkuRam/plant-detection)
+[Plant Detection (Github)](https://github.com/AkkuRam/plant-detection)
 
 ## Dataset
 
 This dataset was obtained from Kaggle, contained over 50k images. Moreover, for the
 model training this dataset was split into training (~36k) and test images (~17k).
 
-- https://www.kaggle.com/datasets/sebastianpalaciob/plantvillage-for-object-detection-yolo/data#
+[Kaggle Dataset](https://www.kaggle.com/datasets/sebastianpalaciob/plantvillage-for-object-detection-yolo/data#)
 
 
 ## Task
 
-- The main task was to perform object detection to identify 38 different leaf types
-- The ground truth bounding boxes, which were the YOLO annotation were given in the format
-    - (centerx, centery, width, height)
+The main task was to perform object detection to identify 38 different leaf types. The ground truth bounding boxes, which were the YOLO annotation were given in the format (centerx, centery, width, height).
 
 In terms of preprocessing, the images were resized to 256x256 pixels, where Gaussian Blur was applied 
 to preprocess the salt/pepper noise present in the image. Moreover, the images were normalized as a final step.
 
-## Model
+## Regressor Model
+
+Here the base model used was resnet50, where this is the model for the bounding box predictions.
+Where the final layer has 4 outputs representing the format (centerx, centery, width, height) representing the 
+bounding box.
 
 ```python
 self.regressor = 
@@ -41,6 +43,18 @@ nn.Sequential(
     nn.Sigmoid()
 )
 ```
+
+This format (centerx, centery, width, height) is later converted into the 4 corners as the bounding box
+to be displayed on the test images.
+
+## Batch results
+
+- Ground truth (green)
+- Model predictions (red)
+- Here 500 images were used for training and test to save computational power
+- The batch size was 8 images, where in total there were 63 total batches
+
+![Disk](/assets/images/leaf_detection.png)
 
 ## Running the file
 
