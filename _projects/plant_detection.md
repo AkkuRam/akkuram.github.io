@@ -6,7 +6,7 @@ classes: wide
 ---
 
 <a href="https://github.com/AkkuRam/plant-detection">
-  <i class="fab fa-fw fa-github"></i> Plant Detection 
+  Github: <i class="fab fa-fw fa-github"></i> Plant Detection 
 </a>
 
 ## Dataset
@@ -64,7 +64,6 @@ def yolo_to_xyxy(box, img_w, img_h):
     y2 = int(cy + h / 2)
 
     return x1, y1, x2, y2
-
 ```
 
 Using the above method, the YOLO format is converted to the 4 respective corners to display the bounding boxes
