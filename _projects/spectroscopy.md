@@ -60,3 +60,50 @@ From the previous preprocessing steps, now the data is ready to use for the mode
 </p>
 
 With the following selections for mid-level fusion, it lead to the following results for the below metrics. Overall, the best performing models in terms of accuracy was XGBoost (78%), but in terms of other metrics, but XGBoost and RF were stable.
+
+|    | Models   |   Accuracy |   Precision |   Recall |   F1-score |
+|---:|:---------|-----------:|------------:|---------:|-----------:|
+|  0 | XGBoost  |       0.78 |        0.77 |     0.77 |       0.77 |
+|  1 | AdaBoost |       0.51 |        0.55 |     0.53 |       0.49 |
+|  2 | MLP      |       0.6  |        0.53 |     0.56 |       0.53 |
+|  3 | RF       |       0.71 |        0.74 |     0.73 |       0.72 |    
+
+ ## High-level fusion
+
+Unlike mid-level fusion, high-level fusion focuses on combining the outputs of multiple models, there is no
+feature extraction in this stage. Hence, for high-level, all the preprocessing steps are used on the raw data, but without applying PCA. The formula for bayesian consensus is shown below. 
+
+$$
+p(h_g | e) = \\frac{p(e | h_g) p(h_g)}{ \sum_g p(e | h_g) p(h_g)}
+$$
+
+- $p(e|h_g)$ is the likelihood estimate of the conditional probability that evidence e is observed
+given that hypothesis $h_g$ is true
+- $p(h_g)$ is the prior probability that hypothesis $h_g$ is true
+        
+Example:
+
+|    | Model C   |   Predicted A |   Predicted B |   Likelihood A |   Likelihood B |
+|---:|:----------|--------------:|--------------:|---------------:|---------------:|
+|  0 | True A    |           127 |            19 |           0.87 |           0.13 |
+|  1 | True B    |            12 |            60 |           0.17 |           0.83 |
+
+$$
+p(h_A|A) = \\frac{0.87 \cdot 0.50}{0.17 \cdot 0.5 + 0.97 \cdot 0.5} = 0.84   
+$$
+
+$$
+p(h_B|A) = 1 - 0.84 = 0.16  
+$$
+
+For the above example, our prior probabilities are represented by 0.5, as seen with our confusion matrices which is $2 \\times 2$,
+as in Predicted vs True labels, where with the likelhood probabilities. We can compute this formula for some Model C, then these outputs (0.84, 0.16) are provided as input to the next model.        
+
+The models used for combining the outputs are RF, Decision Tree, XGBoost, Logistic Regression, SVM, KNN. The main crux of bayesian consensus is that, in each iteration
+it gives out two probabilities, essentially for the label "yes" and "no". Since for 1 vs Rest, this becomes binary, so after iterating  for each class, we get as the final output (two probabilites), where we choose the higher probability and this is accuracy  of predicting that class. 
+
+Key Takeaway: The decision of the yes/no labels are chosen by us. As a result this is a bias, since the chosen labels can vary the results. The predicted labels will be given by the model and the actual/true label are defined by us.
+
+## Future Work 
+- Could have tried out many more fusion techniques to compare (i.e. Low-level, Federating learning), as well as  a few more within Mid/Low-level fusion
+- Try another technique, which is averaging out all samples for each plastic type to create 7 distinct signals, then using cosine similarity to compare the true signal of each plastic type with our 7 distinct signals. 
