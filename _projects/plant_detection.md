@@ -45,7 +45,28 @@ nn.Sequential(
 ```
 
 This format (centerx, centery, width, height) is later converted into the 4 corners as the bounding box
-to be displayed on the test images.
+to be displayed on the test images. This is done through the following method:
+
+```python
+def yolo_to_xyxy(box, img_w, img_h):
+    cx, cy, w, h = box
+
+    cx *= img_w
+    cy *= img_h
+    w  *= img_w
+    h  *= img_h
+
+    x1 = int(cx - w / 2)
+    y1 = int(cy - h / 2)
+    x2 = int(cx + w / 2)
+    y2 = int(cy + h / 2)
+
+    return x1, y1, x2, y2
+
+```
+
+Using the above method, the YOLO format is converted to the 4 respective corners to display the bounding boxes
+as seen in the batch results section below.
 
 ## Batch results
 

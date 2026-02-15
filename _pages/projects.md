@@ -13,7 +13,7 @@ feature_row:
   #   btn_class: "btn--primary"
 
   - alt: "Disk"
-    title: "Disk analyzer"
+    title: "Disk Analyzer"
     excerpt: This is a system monitoring tool which displays
              different statistics of a device (i.e. CPU usage, network speed, etc.)
     url: /projects/disk_analyzer
@@ -21,7 +21,7 @@ feature_row:
     btn_class: "btn--primary"
 
   - alt: "Spectroscopy"
-    title: "Plastic type prediction"
+    title: "Spectroscopy Classification"
     excerpt: Fuse near-infrared spectroscopy signal measurements with categorical descriptors on a dataset obtained from          household plastics
     url: /projects/spectroscopy
     btn_label: "View Project"
