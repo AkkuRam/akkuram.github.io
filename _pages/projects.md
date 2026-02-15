@@ -22,7 +22,7 @@ feature_row:
 
   - alt: "Spectroscopy"
     title: "Plastic type prediction"
-    excerpt: Fuse near-infrared spectroscopy signal measurements with categorical descriptors on a dataset obtained from          household plastic in a group of 4 people
+    excerpt: Fuse near-infrared spectroscopy signal measurements with categorical descriptors on a dataset obtained from          household plastics
     url: /projects/spectroscopy
     btn_label: "View Project"
     btn_class: "btn--primary"
